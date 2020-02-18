@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyChooserActivity">
+
+    <Button
+        android:id="@+id/button_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Dollar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="yen"
+        app:layout_constraintEnd_toEndOf="@+id/button_dollar"
+        app:layout_constraintStart_toStartOf="@+id/button_dollar"
+        app:layout_constraintTop_toBottomOf="@+id/button_dollar" />
+
+    <Button
+        android:id="@+id/pounds_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="pounds"
+        app:layout_constraintEnd_toEndOf="@+id/yen_button"
+        app:layout_constraintStart_toStartOf="@+id/yen_button"
+        app:layout_constraintTop_toBottomOf="@+id/yen_button" />
+
+    <TextView
+        android:id="@+id/lastConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pounds_button"
+        app:layout_constraintStart_toStartOf="@+id/pounds_button"
+        app:layout_constraintTop_toBottomOf="@+id/pounds_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
